@@ -1,0 +1,43 @@
+<%= render partial: 'form' %>
+
+<!--
+<form action="/users" method="post" accept-charset="UTF-8">
+  <input type="hidden" name="authenticity_token" 
+  value="<%= form_authenticity_token %>">
+  <label for="username">User Name:</label>
+  <input type="text" id="username" name="user[username]">
+  <hr>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="user[email]">
+  <hr>
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="user[password]">
+  <input type="submit" value="submit">
+</form>
+-->
+
+<!--
+<%= form_tag('/users', method: :post) %>
+<%= label_tag 'username', 'Username:' %>
+<%= text_field_tag 'username' %>
+<hr style="border:none">
+<%= label_tag 'email', 'Email:' %>
+<%= text_field_tag 'email' %>
+<hr style="border:none">
+<%= label_tag 'email', 'Password:'%>
+<%= text_field_tag 'password' %>
+<hr style="border:none">
+<%= submit_tag 'Submit'%>
+-->
+
+<!--
+<%= form_for @user do |form| %>
+  <%= form.label :username, 'Username:' %>
+  <%= form.text_field :username, :value => 'Admin' %><br>
+  <%= form.label :email, 'Email:' %>
+  <%= form.text_field :email, placeholder: 'example@example.com' %><br>
+  <%= form.label :password, 'Password:' %>
+  <%= form.text_field :password %><br>
+  <%= form.submit %>
+<% end %>
+-->
